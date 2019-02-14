@@ -33,6 +33,7 @@ public class EmployeeListAdapter extends RecyclerView.Adapter<EmployeeListAdapte
             this.employeeList.clear();
             if (employeeList != null ) {
                 this.employeeList.addAll(employeeList);
+                this.filteredEmployeeList.addAll(employeeList);
                 notifyDataSetChanged();
             }
         });
@@ -48,12 +49,12 @@ public class EmployeeListAdapter extends RecyclerView.Adapter<EmployeeListAdapte
 
     @Override
     public void onBindViewHolder(@NonNull EmployeeViewHolder holder, int position) {
-        holder.bind(employeeList.get(position));
+        holder.bind(filteredEmployeeList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return employeeList.size();
+        return filteredEmployeeList.size();
     }
 
     @Override
