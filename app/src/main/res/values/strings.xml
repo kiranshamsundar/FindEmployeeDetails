@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EmployeeBook</string>
+    <string name="msg_no_title">No title</string>
+    <string name="msg_no_description">No Description Available</string>
+    <string name="network_error">Please Check Network Connection</string>
+    <string name="msg_error_while_loading">An Error Occurred While Loading Data!</string>
+</resources>
